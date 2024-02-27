@@ -93,9 +93,8 @@ if __name__ == "__main__":
     if3 = proc_res(dat3, model1, lproj2, H_func)
 
     # Compute ATE and Confidence Intervals
-    if_vec = torch.cat((if1, if2, if3), dim=0)
-    ate_beta = if_vec.mean(dim=0)
-    ate_se = (if_vec.var()/n).sqrt()
+    ate_beta = torch.cat((if1, if2, if3), dim=0).mean(dim=0)
+    ate_se = ((1/3)*(if1.var() + if2.var() + if3.var())/n).sqrt()
 
     # Report results
     print(f'ATE: {ate_beta.item():.3f}')
