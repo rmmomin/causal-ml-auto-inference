@@ -64,7 +64,7 @@ if __name__ == "__main__":
     split1 = int(n/3)
     split2 = int(n/3)
     split3 = n-split1-split2
-    samp1, samp2, samp3 = random_split(torch.cat([y],dim=1), (split1,split2,split3))
+    samp1, samp2, samp3 = random_split(torch.arange(n), (split1,split2,split3))
     dat1 = {"X": X[samp1.indices,:], "y": y[samp1.indices,:], "z": z[samp1.indices,:]}
     dat2 = {"X": X[samp2.indices,:], "y": y[samp2.indices,:], "z": z[samp2.indices,:]}
     dat3 = {"X": X[samp3.indices,:], "y": y[samp3.indices,:], "z": z[samp3.indices,:]}
