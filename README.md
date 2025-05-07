@@ -2,7 +2,7 @@
 # Causal ML Auto-Inference
 
 This repository provides a PyTorch implementation of the framework proposed in the paper:  
-**[Deep Learning for Individual Heterogeneity: An Automatic Inference Framework](https://arxiv.org/abs/2006.07544)**  
+**[Deep Learning for Individual Heterogeneity: An Automatic Inference Framework]([https://arxiv.org/abs/2006.07544](https://arxiv.org/abs/2010.14694))**  
 by Max H. Farrell, Tengyuan Liang, and Sanjog Misra.
 
 ## Overview
@@ -72,7 +72,7 @@ causal-ml-auto-inference/
 
 ## References
 
-- **Original Paper**: [Deep Learning for Individual Heterogeneity: An Automatic Inference Framework](https://arxiv.org/abs/2006.07544)
+- **Original Paper**: [Deep Learning for Individual Heterogeneity: An Automatic Inference Framework]([https://arxiv.org/abs/2006.07544](https://arxiv.org/abs/2010.14694))
 - **Original R Code**: [R Implementation](https://github.com/ChicagoBoothML/DeepIV)
 
 ## License
