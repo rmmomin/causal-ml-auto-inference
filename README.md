@@ -7,13 +7,12 @@ by Max H. Farrell, Tengyuan Liang, and Sanjog Misra.
 
 ## Overview
 
-The framework introduces a deep learning approach to automatically infer individual-level heterogeneity in treatment effects. It combines machine learning techniques with causal inference principles to estimate Conditional Average Treatment Effects (CATE) without manual feature engineering.
+The framework introduces a deep learning approach to automatically infer individual-level heterogeneity in treatment effects. It combines machine learning techniques with causal inference principles to estimate Conditional Average Treatment Effects (CATE). Illustrates estimation and inference for the estimator for the average treatment effect.
 
 ## Features
 
-- **PyTorch Implementation**: Leverages PyTorch for building and training neural networks tailored for causal inference tasks.
-- **Automatic Inference**: Automates the process of estimating individual treatment effects using deep learning.
-- **Reproducibility**: Includes code to replicate experiments and results from the original paper.
+- **PyTorch Implementation**: Leverages PyTorch for building and training neural networks with a MSE loss function as an example.
+- **Automatic Inference**: Uses automatic differentiation to compute gradients for the influence function estimator.
 
 ## Getting Started
 
@@ -34,39 +33,16 @@ git clone https://github.com/rmmomin/causal-ml-auto-inference.git
 cd causal-ml-auto-inference
 ```
 
-2. **Install dependencies**:
-
-```bash
-pip install -r requirements.txt
-```
-
 ### Usage
 
 The main scripts and modules are located in the `code/` directory.
-
-To train the model:
-
-```bash
-python code/train_model.py --config configs/default.yaml
-```
-
-To evaluate the model:
-
-```bash
-python code/evaluate_model.py --model_path outputs/model.pth
-```
-
-Replace `configs/default.yaml` and `outputs/model.pth` with your configuration file and trained model path, respectively.
 
 ## Directory Structure
 
 ```
 causal-ml-auto-inference/
 ├── code/                   # Source code for model training and evaluation
-├── configs/                # Configuration files for experiments
-├── data/                   # Dataset files
 ├── outputs/                # Saved models and results
-├── requirements.txt        # Python dependencies
 └── README.md               # Project documentation
 ```
 
