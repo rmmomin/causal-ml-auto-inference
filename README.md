@@ -33,6 +33,12 @@ git clone https://github.com/rmmomin/causal-ml-auto-inference.git
 cd causal-ml-auto-inference
 ```
 
+2. **Install dependencies**:
+
+```bash
+pip install -r requirements.txt
+```
+
 ### Usage
 
 The main scripts and modules are located in the `code/` directory.
@@ -43,6 +49,7 @@ The main scripts and modules are located in the `code/` directory.
 causal-ml-auto-inference/
 ├── code/                   # Source code for model training and evaluation
 ├── outputs/                # Saved models and results
+├── requirements.txt        # Python dependencies
 └── README.md               # Project documentation
 ```
 
