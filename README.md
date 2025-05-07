@@ -74,7 +74,6 @@ causal-ml-auto-inference/
 
 - **Original Paper**: [Deep Learning for Individual Heterogeneity: An Automatic Inference Framework](https://arxiv.org/abs/2006.07544)
 - **Original R Code**: [R Implementation](https://github.com/ChicagoBoothML/DeepIV)
-- **Alternative PyTorch Implementation**: [Flexible PyTorch Version](https://github.com/ChicagoBoothML/DeepIV-PyTorch)
 
 ## License
 
